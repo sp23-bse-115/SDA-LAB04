@@ -1,5 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 public class PipeAndFilter {
- public static void main(String[] args) {
+    public static void main(String[] args) {
  List<Integer> input = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
  // Create a pipeline
  List<Function<List<Integer>, List<Integer>>> filters = new ArrayList<>();
